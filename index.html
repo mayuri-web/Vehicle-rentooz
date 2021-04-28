@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--=== Favicon ===-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>VehilcezRentooz</title>
+
+    <!--=== Bootstrap CSS ===-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--=== Slicknav CSS ===-->
+    <link href="assets/css/plugins/slicknav.min.css" rel="stylesheet">
+    <!--=== Magnific Popup CSS ===-->
+    <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet">
+    <!--=== Owl Carousel CSS ===-->
+    <link href="assets/css/plugins/owl.carousel.min.css" rel="stylesheet">
+    <!--=== Gijgo CSS ===-->
+    <link href="assets/css/plugins/gijgo.css" rel="stylesheet">
+    <!--=== FontAwesome CSS ===-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!--=== Theme Reset CSS ===-->
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <!--=== Main Style CSS ===-->
+    <link href="style.css" rel="stylesheet">
+    <!--=== Responsive CSS ===-->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="loader-active">
+
+    <!--== Preloader Area Start ==-->
+    <div class="preloader">
+        <div class="preloader-spinner">
+            <div class="loader-content">
+                <img src="assets/img/preloader.gif" alt="JSOFT">
+            </div>
+        </div>
+    </div>
+    <!--== Preloader Area End ==-->
+
+    <!--== Header Area Start ==-->
+    <header id="header-area" class="fixed-top">
+        <!--== Header Top Start ==-->
+        <div id="header-top" class="d-none d-xl-block">
+            <div class="container">
+                <div class="row">
+                    <!--== Single HeaderTop Start ==-->
+                    <div class="col-lg-3 text-left">
+                        <i class="fa fa-map-marker"></i> 120/2, Nagpur, Maharastra
+                    </div>
+                    <!--== Single HeaderTop End ==-->
+
+                    <!--== Single HeaderTop Start ==-->
+                    <div class="col-lg-3 text-center">
+                        <i class="fa fa-mobile"></i> +91 7895623231
+                    </div>
+                    <!--== Single HeaderTop End ==-->
+
+                    <!--== Single HeaderTop Start ==-->
+                    <div class="col-lg-3 text-center">
+                        <i class="fa fa-clock-o"></i> Mon-Fri 09.00 - 17.00
+                    </div>
+                    <!--== Single HeaderTop End ==-->
+
+                    <!--== Social Icons Start ==-->
+                    <div class="col-lg-3 text-right">
+                        <div class="header-social-icons">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <!--== Social Icons End ==-->
+                </div>
+            </div>
+        </div>
+        <!--== Header Top End ==-->
+
+        <!--== Header Bottom Start ==-->
+        <div id="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <!--== Logo Start ==-->
+                    <div class="col-lg-4">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/my_logo.png" alt="my logo">
+                        </a>
+                    </div>
+                    <!--== Logo End ==-->
+
+                    <!--== Main Menu Start ==-->
+                    <div class="col-lg-8 d-none d-xl-block">
+                        <nav class="mainmenu alignright">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">services</a></li>
+                                <li><a href="cars.html">Cars</a></li>
+                                <li><a href="index.html">Support</a>
+                                    <ul>
+                                        <li><a href="package.html">Pricing</a></li>
+                                        <li><a href="driver.html">Driver</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--== Main Menu End ==-->
+                </div>
+            </div>
+        </div>
+        <!--== Header Bottom End ==-->
+    </header>
+    <!--== Header Area End ==-->
+
+    <!--== Slider Area Start ==-->
+    <section id="slider-area">
+        <!--== slide Item One ==-->
+        <div class="single-slide-item overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="book-a-car">
+                            <form action="index.html" id="myform">
+                                <!--== Pick Up Location ==-->
+                                <div class="pickup-location book-item">
+                                    <h4>PICK-UP LOCATION:</h4>
+                                    <select class="custom-select">
+                                      <option selected>Select</option>
+                                      <option value="1">Nagpur</option>
+                                      <option value="2">Gondiya</option>
+                                      <option value="3">Vardha</option>
+                                      <option value="3">Bhandara</option>
+                                    </select>
+                                </div>
+                                <!--== Pick Up Location ==-->
+
+                                <!--== Pick Up Date ==-->
+                                <div class="pick-up-date book-item">
+                                    <h4>PICK-UP DATE:</h4>
+                                    <input id="startDate" placeholder="Pick Up Date" />
+
+                                    <div class="return-car">
+                                        <h4>Return DATE:</h4>
+                                        <input id="endDate" placeholder="Return Date" />
+                                    </div>
+                                </div>
+                                <!--== Pick Up Location ==-->
+
+                                <div class="book-button text-center">
+                                    <a href="book.html" class="book-now-btn">Book Now</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 text-right">
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <div class="slider-right-text">
+                                    <h1>BOOK A CAR TODAY!</h1>
+                                    <p>FOR AS LOW AS A DAY PLUS 15% DISCOUNT <br> FOR OUR RETURNING CUSTOMERS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--== slide Item One ==-->
+    </section>
+    <!--== Slider Area End ==-->
+
+    <!--== About Us Area Start ==-->
+    <section id="about-area" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title Start -->
+                <div class="col-lg-12">
+                    <div class="section-title  text-center">
+                        <h2>About us</h2>
+                        <span class="title-line"><i class="fa fa-car"></i></span>
+                        <p>Wherever you go, go with all your heart.</p>
+                    </div>
+                </div>
+                <!-- Section Title End -->
+            </div>
+
+            <div class="row">
+                <!-- About Content Start -->
+                <div class="col-lg-6">
+                    <div class="display-table">
+                        <div class="display-table-cell">
+                            <div class="about-content">
+                                <p>VehiclezRentooz rental company was established in 2018.Travel is the main thing you purchase that makes you more extravagant. Today, we process over 10 thousand queries across our platforms each year for travel information, helping thousand of travellers around the globe make confident decisions.</p>
+
+                                <p>At VehiclezRentooz, we take pride in serving our customers to the best of our abilities and we have a solid track record. We believe in being transparent and we work hard.</p>
+                                <div class="about-btn">
+                                    <a href="book.html">Book a Car</a>
+                                    <a href="contact.html">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About Content End -->
+
+                <!-- About Video Start -->
+                <div class="col-lg-6">
+                    <div class="about-image">
+                       <img src="assets/img/Hyundai_AURA.png" alt="car">
+                    </div>
+                </div>
+                <!-- About Video End -->
+            </div>
+        </div>
+    </section>
+    <!--== About Us Area End ==-->
+
+    <!--== Partner Area Start ==-->
+    <div id="partner-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="partner-content-wrap">
+                        <!-- Single Partner Start -->
+                        <div class="single-partner">
+                            <div class="display-table">
+                                <div class="display-table-cell">
+                                    <img src="assets/img/partner/partner-logo-1.png" alt="partner1">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Partner End -->
+
+                        <!-- Single Partner Start -->
+                        <div class="single-partner">
+                            <div class="display-table">
+                                <div class="display-table-cell">
+                                    <img src="assets/img/partner/partner-logo-2.png" alt="partner2">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Partner End -->
+
+                        <!-- Single Partner Start -->
+                        <div class="single-partner">
+                            <div class="display-table">
+                                <div class="display-table-cell">
+                                    <img src="assets/img/partner/partner-logo-3.png" alt="partner3">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Partner End -->
+
+                        <!-- Single Partner Start -->
+                        <div class="single-partner">
+                            <div class="display-table">
+                                <div class="display-table-cell">
+                                    <img src="assets/img/partner/partner-logo-4.png" alt="partner4">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Partner End -->
+
+                        <!-- Single Partner Start -->
+                        <div class="single-partner">
+                            <div class="display-table">
+                                <div class="display-table-cell">
+                                    <img src="assets/img/partner/partner-logo-5.png" alt="partner5">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Partner End -->
+
+                        <!-- Single Partner Start -->
+                        <div class="single-partner">
+                            <div class="display-table">
+                                <div class="display-table-cell">
+                                    <img src="assets/img/partner/partner-logo-1.png" alt="partners1">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Partner End -->
+
+                        <!-- Single Partner Start -->
+                        <div class="single-partner">
+                            <div class="display-table">
+                                <div class="display-table-cell">
+                                    <img src="assets/img/partner/partner-logo-4.png" alt="partners4">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Partner End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--== Partner Area End ==-->
+
+    <!--== Services Area Start ==-->
+    <section id="service-area" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title Start -->
+                <div class="col-lg-12">
+                    <div class="section-title  text-center">
+                        <h2>Our Services</h2>
+                        <span class="title-line"><i class="fa fa-car"></i></span>
+                        <p>Wherever you go, go with all your heart.</p>
+                    </div>
+                </div>
+                <!-- Section Title End -->
+            </div>
+
+           
+			<!-- Service Content Start -->
+			<div class="row">
+				<!-- Single Service Start -->
+				<div class="col-lg-4 text-center">
+					<div class="service-item">
+						<i class="fa fa-taxi"></i>
+						<h3>RENTAL CAR</h3>
+						<p>Don't worry about mileage! All fuel costs are included. If you refill fuel, we'll pay you back.</p>
+					</div>
+				</div>
+				<!-- Single Service End -->
+				
+				<!-- Single Service Start -->
+				<div class="col-lg-4 text-center">
+					<div class="service-item">
+						<i class="fa fa-cog"></i>
+						<h3>CAR REPAIR</h3>
+						<p>All your bookings include damage insurance! Drive safe, but don’t worry! Feel free to drive.</p>
+					</div>
+				</div>
+				<!-- Single Service End -->
+				
+				<!-- Single Service Start -->
+				<div class="col-lg-4 text-center">
+					<div class="service-item">
+						<i class="fa fa-map-marker"></i>
+						<h3>TAXI SERVICE</h3>
+						<p>Our cars have all-India permits.  Just remember to pay state tolls and entry taxes.</p>
+					</div>
+				</div>
+				<!-- Single Service End -->
+				
+				<!-- Single Service Start -->
+				<div class="col-lg-4 text-center">
+					<div class="service-item">
+						<i class="fa fa-life-ring"></i>
+						<h3>life insurance</h3>
+						<p>Our prices include taxes and insurance.What you see is what you really pay!</p>
+					</div>
+				</div>
+				<!-- Single Service End -->
+				
+				<!-- Single Service Start -->
+				<div class="col-lg-4 text-center">
+					<div class="service-item">
+						<i class="fa fa-bath"></i>
+						<h3>car wash</h3>
+						<p>You get neat and clean cars. We wash and oiling our car before your trip. Don't worry about our hygine.</p>
+					</div>
+				</div>
+				<!-- Single Service End -->
+				
+				<!-- Single Service Start -->
+				<div class="col-lg-4 text-center">
+					<div class="service-item">
+						<i class="fa fa-phone"></i>
+						<h3>call driver</h3>
+						<p>Our driver are profesional in their driving skills. Don't worry about your jounry, feel safe and enjoy.</p>
+					</div>
+				</div>
+				<!-- Single Service End -->
+			</div>
+			<!-- Service Content End -->
+        </div>
+    </section>
+    <!--== Services Area End ==-->
+
+    <!--== Fun Fact Area Start ==-->
+    <section id="funfact-area" class="overlay section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11 col-md-12 m-auto">
+                    <div class="funfact-content-wrap">
+                        <div class="row">
+                            <!-- Single FunFact Start -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-funfact">
+                                    <div class="funfact-icon">
+                                        <i class="fa fa-smile-o"></i>
+                                    </div>
+                                    <div class="funfact-content">
+                                        <p><span class="counter">550</span>+</p>
+                                        <h4>HAPPY CLIENTS</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single FunFact End -->
+
+                            <!-- Single FunFact Start -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-funfact">
+                                    <div class="funfact-icon">
+                                        <i class="fa fa-car"></i>
+                                    </div>
+                                    <div class="funfact-content">
+                                        <p><span class="counter">250</span>+</p>
+                                        <h4>CARS IN STOCK</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single FunFact End -->
+
+                            <!-- Single FunFact Start -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-funfact">
+                                    <div class="funfact-icon">
+                                        <i class="fa fa-bank"></i>
+                                    </div>
+                                    <div class="funfact-content">
+                                        <p><span class="counter">50</span>+</p>
+                                        <h4>office in cities</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single FunFact End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--== Fun Fact Area End ==-->
+
+    <!--== Choose Car Area Start ==-->
+    <section id="choose-car" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title Start -->
+                <div class="col-lg-12">
+                    <div class="section-title  text-center">
+                        <h2>Choose your Car</h2>
+                        <span class="title-line"><i class="fa fa-car"></i></span>
+                        <p>Wherever you go, go with all your heart.</p>
+                    </div>
+                </div>
+                <!-- Section Title End -->
+            </div>
+
+            <div class="row">
+                <!-- Choose Area Content Start -->
+                <div class="col-lg-12">
+                    <div class="choose-content-wrap">
+                            <!-- Popular Cars Content Wrapper Start -->
+                        <div class="popular-cars-wrap">
+                                    <!-- PopularCars Tab Content Start -->
+                            <div class="row popular-car-gird">
+                                <!-- Single Popular Car Start 1-->
+                                <div class="col-lg-4 col-md-6">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/Renault-Triber.jpg">
+                                                      <img src="assets/img/car/Renault-Triber.jpg" alt="JSOFT">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Renault Triber</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> ₹3,850/day</span>
+                                                    </h3>
+
+                                                    <h5>7 seater</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">Petrol</a>
+                                                        <a href="#">manual</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                    <div class="booking mt-2">
+                                                        <a href="#">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <!-- Single Popular Car End 1-->
+
+                                <!-- Single Popular Car Start 2-->
+                                <div class="col-lg-4 col-md-6">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/vtmt-petrol.jpg">
+                                                      <img src="assets/img/car/vtmt-petrol.jpg" alt="vtmt-petrol">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Honda City VX MT</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> ₹4,800/day</span>
+                                                    </h3>
+
+                                                    <h5>5 seater</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">Petrol</a>
+                                                        <a href="#">automatic</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                    <div class="booking mt-2">
+                                                        <a href="#">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <!-- Single Popular Car End 2-->
+
+                                <!-- Single Popular Car Start 3-->
+                                <div class="col-lg-4 col-md-6">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/mahidra_scropio.jpg">
+                                                      <img src="assets/img/car/mahidra_scropio.jpg" alt="mahidra_scropio">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Mahindra Scropio</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> ₹3,000/day</span>
+                                                    </h3>
+
+                                                    <h5>7 seater</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">Disel</a>
+                                                        <a href="#">automatic</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                    <div class="booking mt-2">
+                                                        <a href="#">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <!-- Single Popular Car End 3-->
+
+                                <!-- Single Popular Car Start 4-->
+                                <div class="col-lg-4 col-md-6">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/honda_crv.jpg">
+                                                      <img src="assets/img/car/honda_crv.jpg" alt="honda_crv" style="height: 200px;">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Honda CRV</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> ₹3,850/day</span>
+                                                    </h3>
+
+                                                    <h5>7 seater</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">Disel</a>
+                                                        <a href="#">automatic</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                    <div class="booking mt-2">
+                                                        <a href="#">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <!-- Single Popular Car End 4-->
+
+                                <!-- Single Popular Car Start 5-->
+                                <div class="col-lg-4 col-md-6">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/hyundai-elite-i20.png">
+                                                      <img src="assets/img/car/hyundai-elite-i20.png" alt="hyundai-elite-i20" style="height: 200px;">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Hyundai Elite-i20</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> ₹4,000/day</span>
+                                                    </h3>
+
+                                                    <h5>5 seater</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">Petrol</a>
+                                                        <a href="#">automatic</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                    <div class="booking mt-2">
+                                                        <a href="#">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <!-- Single Popular Car End 5-->
+
+                                <!-- Single Popular Car Start 6-->
+                                <div class="col-lg-4 col-md-6">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/mahindra-s204.jpg">
+                                                      <img src="assets/img/car/mahindra-s204.jpg" alt="mahindra-s204" style="height: 200px;">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Mahindra s204</a>
+                                                        <span class="price"><i class="fa fa-tag"></i>₹3,555/day</span>
+                                                    </h3>
+
+                                                    <h5>5 seater</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">Disel</a>
+                                                        <a href="#">automatic</a>
+                                                        <a href="#">AIR CONDITION</a>
+
+                                                    </div>
+                                                    <div class="booking mt-2">
+                                                        <a href="#">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <!-- Single Popular Car End 6-->
+                            </div>
+                            <!-- Popular Cars Content Wrapper End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Choose Area Content End -->
+            </div>
+        </div>
+    </section>
+    <!--== Choose Car Area End ==-->
+
+    <!--== Pricing Area Start ==-->
+    <section id="pricing-area" class="section-padding overlay">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title Start -->
+                <div class="col-lg-12">
+                    <div class="section-title  text-center">
+                        <h2>Only quality for clients</h2>
+                        <span class="title-line"><i class="fa fa-car"></i></span>
+                        <p>Wherever you go, go with all your heart.</p>
+                    </div>
+                </div>
+                <!-- Section Title End -->
+            </div>
+
+            <!-- Pricing Table Conatent Start -->
+            <div class="row">
+                <!-- Single Pricing Table -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-pricing-table">
+                        <h3>BUSINESS</h3>
+                        <h2>₹ 3,850</h2>
+                        <h5>PER MONTH</h5>
+
+                        <ul class="package-list">
+                            <li>FREE VEHICLE DELIVERY</li>
+                            <li>WEDDINGS CELEBRATIONS</li>
+                            <li>FULL INSURANCE INCLUDED</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Single Pricing Table -->
+
+                <!-- Single Pricing Table -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-pricing-table">
+                        <h3>Trial</h3>
+                        <h2>Free</h2>
+                        <h5>PER MONTH</h5>
+
+                        <ul class="package-list">
+                            <li>FREE VEHICLE DELIVERY</li>
+                            <li>OTHER CELEBRATIONS</li>
+                            <li>FULL INSURANCE INCLUDED</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Single Pricing Table -->
+
+                <!-- Single Pricing Table -->
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-pricing-table">
+                        <h3>standard</h3>
+                        <h2>₹ 5,055</h2>
+                        <h5>PER MONTH</h5>
+
+                        <ul class="package-list">
+                            <li>DELIVERY AT AIRPORT</li>
+                            <li>WEDDINGS AND OTHER</li>
+                            <li>FULL INSURANCE INCLUDED</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Single Pricing Table -->
+            </div>
+            <!-- Pricing Table Conatent End -->
+        </div>
+    </section>
+    <!--== Pricing Area End ==-->
+
+    <!--== Testimonials Area Start ==-->
+    <section id="testimonial-area" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title Start -->
+                <div class="col-lg-12">
+                    <div class="section-title  text-center">
+                        <h2>Testimonials</h2>
+                        <span class="title-line"><i class="fa fa-car"></i></span>
+                        <p>Wherever you go, go with all your heart.</p>
+                    </div>
+                </div>
+                <!-- Section Title End -->
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-12 m-auto">
+                    <div class="testimonial-content">
+                        <!--== Single Testimoial Start ==-->
+                        <div class="single-testimonial">
+                            <p>We would like to thank VehiclezRentooz rentalTravels for organising wonderful tour for us in Delhi, Agra and Rajasthan. Everything was very well organised. Thank you very much for everything!</p>
+                            <h3>Arun Mahajan</h3>
+                            <div class="client-logo">
+                                <img src="assets/img/client/arun_mahjan.jpg" alt="client1" style="height: 100px;">
+                            </div>
+                        </div>
+                        <!--== Single Testimoial End ==-->
+
+                        <!--== Single Testimoial Start ==-->
+                        <div class="single-testimonial">
+                            <p>We all can not thank you enough for an excellent trip you organized for us to The Andaman & Nicobar Islands. Thanks to your meticulous planning everything was fantastic and we had no issue whatsoever.</p>
+                            <h3>Priti Zaa</h3>
+                            <div class="client-logo">
+                                <img src="assets/img/client/Priti_zaa.jpg" alt="client3" style="height: 100px;">
+                            </div>
+                        </div>
+                        <!--== Single Testimoial End ==-->
+
+                        <!--== Single Testimoial Start ==-->
+                        <div class="single-testimonial">
+                            <p>Excellent itinerary design by the VehiclezRentooz team for Nagpur. Traveled with child and senior citizens all arrangements were satisfactory.
+                            </p>
+                            <h3>Rahul Meheta</h3>
+                            <div class="client-logo">
+                                <img src="assets/img/client/Rahul_meheta.jpg" alt="client2" style="height: 100px;">
+                            </div>
+                        </div>
+                        <!--== Single Testimoial End ==-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--== Testimonials Area End ==-->
+
+    <!--== Footer Area Start ==-->
+    <section id="footer-area">
+        <!-- Footer Widget Start -->
+        <div class="footer-widget-area">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Footer Widget Start -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer-widget">
+                            <h2>About Us</h2>
+                            <div class="widget-body">
+                                <p>VehiclezRentooz rental company was established in 2018.Travel is the main thing you purchase that makes you more extravagant.Our vision to give you a consistent occasion encounter makes us one of the main visit administrators in the regularly extending travel industry.</p>
+
+                                <div class="newsletter-area">
+                                    <form action="index.html">
+                                        <input type="email" placeholder="Subscribe Our Newsletter">
+                                        <button type="submit" class="newsletter-btn"><i class="fa fa-send"></i></button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Footer Widget End -->
+
+                    <!-- Single Footer Widget Start -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer-widget">
+                            <h2>Company</h2>
+                            <div class="widget-body">
+                                <ul class="recent-post">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Footer Widget End -->
+
+                    <!-- Single Footer Widget Start -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer-widget">
+                            <h2>get touch</h2>
+                            <div class="widget-body">
+                                <ul class="get-touch">
+                                    <li><i class="fa fa-map-marker"></i> 120/2, Nagpur, Maharastra</li>
+                                    <li><i class="fa fa-mobile"></i> +91 7895623231</li>
+                                    <li><i class="fa fa-mobile"></i> +91 8282314256</li>
+                                    <li><i class="fa fa-envelope"></i>contact@vehiclezrentooz.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Footer Widget End -->
+                </div>
+            </div>
+        </div>
+        <!-- Footer Widget End -->
+
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>All rights reserved.
+                        </p>                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+    </section>
+    <!--== Footer Area End ==-->
+
+    <!--== Scroll Top Area Start ==-->
+    <div class="scroll-top">
+        <img src="assets/img/scroll-top.png" alt="top">
+    </div>
+    <!--== Scroll Top Area End ==-->
+
+    <!--=======================Javascript============================-->
+    <!--=== Jquery Min Js ===-->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <!--=== Jquery Migrate Min Js ===-->
+    <script src="assets/js/jquery-migrate.min.js"></script>
+    <!--=== Popper Min Js ===-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--=== Gijgo Min Js ===-->
+    <script src="assets/js/plugins/gijgo.js"></script>
+    <!--=== Vegas Min Js ===-->
+    <script src="assets/js/plugins/vegas.min.js"></script>
+    <!--=== Isotope Min Js ===-->
+    <script src="assets/js/plugins/isotope.min.js"></script>
+    <!--=== Owl Caousel Min Js ===-->
+    <script src="assets/js/plugins/owl.carousel.min.js"></script>
+    <!--=== Waypoint Min Js ===-->
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+    <!--=== CounTotop Min Js ===-->
+    <script src="assets/js/plugins/counterup.min.js"></script>
+    <!--=== YtPlayer Min Js ===-->
+    <script src="assets/js/plugins/mb.YTPlayer.js"></script>
+    <!--=== Magnific Popup Min Js ===-->
+    <script src="assets/js/plugins/magnific-popup.min.js"></script>
+    <!--=== Slicknav Min Js ===-->
+    <script src="assets/js/plugins/slicknav.min.js"></script>
+
+    <!--=== Mian Js ===-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
